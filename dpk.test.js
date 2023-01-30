@@ -11,7 +11,7 @@ describe("deterministicPartitionKey", () => {
     expect(trivialKey).toBe("partitionKey");
     console.log(trivialKey)
   })
-  it("Returns partition key", () => {
+  it("Returns partition key in string type", () => {
     const trivialKey = deterministicPartitionKey({ randomKey: 'random partition key' });
     expect(trivialKey.length).toBeGreaterThan(0)
     console.log(trivialKey)
